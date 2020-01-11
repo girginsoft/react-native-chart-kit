@@ -7,7 +7,7 @@ const Pie = require("paths-js/pie");
 
 class ProgressChart extends AbstractChart {
   render() {
-    const { width, height, style = {}, data, hideLegend } = this.props;
+    const { width, height, style = {}, data, hideLegend, innerContent } = this.props;
     const { borderRadius = 0, margin = 0, marginRight = 0 } = style;
 
     if (Array.isArray(data)) {
@@ -123,7 +123,6 @@ class ProgressChart extends AbstractChart {
                   />
                 );
               })}
-              <Text>30%</Text>
             </G>
             <G>
               {pies.map((pie, i) => {
@@ -141,7 +140,7 @@ class ProgressChart extends AbstractChart {
                   />
                 );
               })}
-              <Text>50%</Text>
+              {innerContent}
             </G>
             {legend}
           </G>
