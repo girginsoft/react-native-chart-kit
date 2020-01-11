@@ -123,6 +123,7 @@ class ProgressChart extends AbstractChart {
                   />
                 );
               })}
+              30%
             </G>
             <G>
               {pies.map((pie, i) => {
@@ -140,6 +141,7 @@ class ProgressChart extends AbstractChart {
                   />
                 );
               })}
+              50%
             </G>
             {legend}
           </G>
