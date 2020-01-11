@@ -140,7 +140,7 @@ class ProgressChart extends AbstractChart {
                   />
                 );
               })}
-              {innerContent}
+              {innerContent()}
             </G>
             {legend}
           </G>
